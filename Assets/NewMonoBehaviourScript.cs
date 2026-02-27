@@ -8,7 +8,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public List<string> color;
     public List<int> number;
     public List<GameObject> cards;
-    public int fireball;
+    public int cardCount;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,27 +22,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
     public void CompleteSet()
     {
-        for(int i; i < 3; i++)
+        for(int i = 0; i < 3; i++)
         {
         score++;
-        string objectShape = shape[Random.Range(0,2)];
-        string objectShading = shading[Random.Range(0,2)];
-        string objectColor = color[Random.Range(0,2)];
-        int objectNumber = number[Random.Range(0,2)];
-        fireball++;
-        if(objectShading == "clear")
-        {
-            if(objectShape == "diamond")
-            {
-                if(objectColor == "red")
-                {
-                    if(objectNumber == 1)
-                    {
-                        Instantiate(cards[0], 0f, 0f, 0f);
-                    }
-                }
-            }
-        }
+        cardCount++;
+        Instantiate(cards[Random.Range(0,80)], new Vector3(i,i,i), Quaternion.identity);
         }
     }
 }
