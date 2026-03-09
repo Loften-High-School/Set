@@ -8,11 +8,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public List<string> color;
     public List<int> number;
     public List<GameObject> cards;
-    public int cardCount;
+   public int trueDeck;
+    public GameObject decks;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -21,12 +21,13 @@ public class NewMonoBehaviourScript : MonoBehaviour
         
     }
     public void CompleteSet()
-    {
+    { 
+       
         for(int i = 0; i < 3; i++)
         {
         score++;
-        cardCount++;
-        Instantiate(cards[Random.Range(0,80)], new Vector3(i,i,i), Quaternion.identity);
+         decks.GetComponent<Deck>().deck =  decks.GetComponent<Deck>().deck - 1;
+         Instantiate(cards[Random.Range(0,80)], new Vector3(i,i,i), Quaternion.identity);
         }
     }
 }
