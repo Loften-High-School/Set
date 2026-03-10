@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 226479566}
   - component: {fileID: 226479565}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1499,25 +1499,88 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   score: 0
-  shading: []
-  shape: []
-  color: []
-  number: 
   cards:
   - {fileID: 1525872263}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2091058558}
+  - {fileID: 722705556}
+  - {fileID: 354089938}
+  - {fileID: 880567155}
+  - {fileID: 1730685942}
+  - {fileID: 157743655}
+  - {fileID: 1164375261}
+  - {fileID: 965562691}
+  - {fileID: 1360893783}
+  - {fileID: 765213196}
+  - {fileID: 121595162}
+  - {fileID: 697838595}
+  - {fileID: 1494527277}
+  - {fileID: 996322687}
+  - {fileID: 1232891559}
+  - {fileID: 692791034}
+  - {fileID: 1344801303}
+  - {fileID: 807950476}
+  - {fileID: 223603977}
+  - {fileID: 964172884}
+  - {fileID: 1799451706}
+  - {fileID: 957385421}
+  - {fileID: 152547611}
+  - {fileID: 673144472}
+  - {fileID: 1116869183}
+  - {fileID: 1385973113}
+  - {fileID: 1072945987}
+  - {fileID: 578356166}
+  - {fileID: 1109293786}
+  - {fileID: 236745679}
+  - {fileID: 318796758}
+  - {fileID: 1661977345}
+  - {fileID: 117657690}
+  - {fileID: 539605757}
+  - {fileID: 1207749017}
+  - {fileID: 575468162}
+  - {fileID: 483883857}
+  - {fileID: 33348050}
+  - {fileID: 1149516328}
+  - {fileID: 1256099702}
+  - {fileID: 118707368}
+  - {fileID: 613164588}
+  - {fileID: 382931197}
+  - {fileID: 840950759}
+  - {fileID: 1378755151}
+  - {fileID: 145185090}
+  - {fileID: 1708101368}
+  - {fileID: 294043076}
+  - {fileID: 253405488}
+  - {fileID: 1363555047}
+  - {fileID: 128509214}
+  - {fileID: 257731701}
+  - {fileID: 1162049580}
+  - {fileID: 1924269821}
+  - {fileID: 46668854}
+  - {fileID: 1313902770}
+  - {fileID: 537530386}
+  - {fileID: 219687327}
+  - {fileID: 837562390}
+  - {fileID: 763521881}
+  - {fileID: 1002622889}
+  - {fileID: 582209379}
+  - {fileID: 433103939}
+  - {fileID: 2050854253}
+  - {fileID: 1653570784}
+  - {fileID: 1423827114}
+  - {fileID: 109883473}
+  - {fileID: 206737163}
+  - {fileID: 422963747}
+  - {fileID: 920423401}
+  - {fileID: 125942458}
+  - {fileID: 592893066}
+  - {fileID: 1380950320}
+  - {fileID: 201833838}
+  - {fileID: 1819869507}
+  - {fileID: 1758668660}
+  - {fileID: 529019845}
+  - {fileID: 1923237773}
+  - {fileID: 444843432}
+  - {fileID: 1211622267}
   trueDeck: 0
   decks: {fileID: 2023980643}
 --- !u!4 &226479566
@@ -1529,7 +1592,7 @@ Transform:
   m_GameObject: {fileID: 226479564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.19977, y: 8.42313, z: 0}
+  m_LocalPosition: {x: 14.14, y: 7.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5221,7 +5284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021978034}
   m_Layer: 0
-  m_Name: Deck
+  m_Name: CardReference
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7947,7 +8010,7 @@ GameObject:
   - component: {fileID: 2023980644}
   - component: {fileID: 2023980647}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Deck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8034,7 +8097,7 @@ Transform:
   m_GameObject: {fileID: 2023980643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.17, y: 6.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8202,7 +8265,7 @@ Transform:
   m_GameObject: {fileID: 2091058558}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.769655, y: 3.531705, z: 0}
+  m_LocalPosition: {x: -24.77, y: 3.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
